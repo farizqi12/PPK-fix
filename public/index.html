@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- --------------- -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: "Poppins", sans-seri;
+      }
+    </style>
+    <!-- --------------------------------- -->
+  </head>
+  <!-- __________________________________-->
+  <body class="bg-gradient-to-b from-white to-gray-400">
+    <section class="min-h-screen flex items-center justify-center">
+      <div
+        class="bg-green-300 flex rounded-2xl shadow-lg max-w-2xl shadow-slate-600 p-5"
+      >
+        <!-- form -->
+        <div class="sm:w-1/2 px-16">
+          <h2 class="font-extrabold text-xl">Login</h2>
+          <p class="text-sm my-4 font-extralight">
+            Gunakan akun yang sudah di beri oleh admin
+          </p>
+
+          <form action="" class="flex flex-col gap-4" id="loginForm">
+            <input
+              class="p-2 rounded-xl shadow-md focus:outline-none focus:ring-4 focus: ring-teal-600 text-sm"
+              type="text"
+              name="username"
+              placeholder="Masukkan username anda"
+            />
+            <div class="relative">
+              <input
+                class="p-2 rounded-xl shadow-md focus:outline-none focus:ring-4 focus: ring-teal-600 text-sm w-full"
+                type="password"
+                name="password"
+                placeholder="Masukkan Paswword"
+              />
+            </div>
+            <!-- Input dropdown -->
+            <select
+              class="p-2 rounded-xl shadow-md focus:outline-none focus:ring-4 focus: ring-teal-600 text-sm w-full"
+              id="loginType"
+            >
+              <option value="">Masuk Sebagai</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>
+            <!-- End of input dropdown -->
+            <button
+              type="button"
+              class="text-center font-bold text-slate-400 bg-slate-100 py-2 mt-6 rounded-full shadow-inner shadow-slate-700 hover:bg-sky-400 focus:bg-sky-600 hover:text-white hover:shadow-lg hover:shadow-slate-600 gr"
+              onclick="login()"
+            >
+              Login
+            </button>
+          </form>
+
+          <!-- allert eror -->
+          <div id="loginError" class="hidden text-red-500 text-sm mt-2">
+            Username atau password salah. Silakan coba lagi.
+          </div>
+          <!-- ---------------------------- -->
+
+          <div class="mt-10 grid grid-cols-3 items-center text-gray-500">
+            <hr class="border-gray-500" />
+            <p class="text-center">Atau</p>
+            <hr class="border-gray-500" />
+          </div>
+
+          <div
+            class="mt-7 text-sm underline opacity-50 hover:text-sky-500 hover:font-semibold hover:opacity-100 group:"
+          >
+            <a href="https://wa.me/qr/VDEVZODYV4FOD1" target="_blank">
+              <p class="group-hover:shadow-xl">Lupa kata sandi anda?</p>
+            </a>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="sm:block hidden w-1/2">
+          <img
+            src="img/Logo Utama.png"
+            alt=""
+            class="bg-slate-200 rounded-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function login() {
+        var loginType = document.getElementById("loginType").value;
+
+        if (loginType === "admin") {
+          window.location.href = "home_admin.html";
+        } else if (loginType == "user") {
+          window.location.href = "home.html";
+        } else {
+          alert("Silakan pilih 'Masuk Sebagai' sebelum melanjutkan.");
+        }
+      }
+    </script>
+  </body>
+</html>
