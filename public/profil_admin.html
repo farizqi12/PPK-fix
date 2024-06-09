@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body
+    class="flex flex-col bg-gray-300 justify-center items-center min-h-screen overflow-x-hidden"
+  >
+    <!-- Header -->
+    <div
+      class="p-4 bg-gray-800 w-full fixed top-0 left-0 right-0 shadow-md flex justify-between items-center"
+    >
+      <h1 class="text-3xl font-bold text-white ml-4">Disapu</h1>
+      <img src="img/Wiga.png" alt="logo wiga" class="mr-4" width="45px" />
+    </div>
+
+    <!-- Profile Content -->
+    <div class="flex-grow mt-20 p-4 w-full max-w-md">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-4">Profile Pengguna</h2>
+          <div class="mb-4">
+            <p class="text-lg">
+              Nama: <span id="user-name" class="font-semibold">John Doe</span>
+            </p>
+            <p class="text-lg">
+              Alamat:
+              <span id="user-address" class="font-semibold"
+                >Jl. Kebon Jeruk No. 27, Jakarta</span
+              >
+            </p>
+            <p>Level : <span id="level" name="level" class="font-bold">User</span></p>
+            <p class="text-lg">
+              Poin Anda: <span id="user-points" class="font-semibold">5</span>
+            </p>
+          </div>
+          <a
+            href="index.html"
+            class="block w-full bg-red-500 text-white text-center py-2 rounded-md hover:bg-red-600"
+            >Log Out</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white rounded-t-lg shadow-lg"
+    >
+      <div class="flex justify-around py-2">
+        <a
+          href="home_admin.html"
+          class="flex flex-col items-center text-center text-gray-400 hover:text-green-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-house mb-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+            />
+          </svg>
+          <span class="text-xs">Home</span>
+        </a>
+        <a
+          href="riwayat_timbang_sampah_admin.html"
+          class="flex flex-col items-center text-center text-gray-400 hover:text-green-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-archive mb-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <span class="text-xs">Riwayat</span>
+        </a>
+        <a
+          href="https://wa.me/qr/VDEVZODYV4FOD1"
+          target="_blank"
+          class="flex flex-col items-center text-center text-gray-400 hover:text-green-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-exclamation-triangle mb-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"
+            />
+            <path
+              d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"
+            />
+          </svg>
+          <span class="text-xs">Laporkan</span>
+        </a>
+        <a
+          href="profil_admin.html"
+          class=" text-green-400 flex flex-col items-center text-center hover:text-green-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            class="bi bi-person mb-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+            />
+          </svg>
+          <span class="text-xs">Profile</span>
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>
