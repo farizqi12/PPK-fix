@@ -95,19 +95,6 @@
       </div>
     </section>
 
-    <script>
-  // function login() {
-  //   var loginType = document.getElementById("loginType").value;
-
-  //   if (loginType === "admin") {
-  //     window.location.href = "<?//= BASEURL . '/home/home_admin'; ?>";
-  //   } else if (loginType === "user") {
-  //     window.location.href = "<?//= BASEURL . '/home/index'; ?>";
-  //   } else {
-  //     alert("Silakan pilih 'Masuk Sebagai' sebelum melanjutkan.");
-  //   }
-  // }
-</script>
 
   </body>
 </html>

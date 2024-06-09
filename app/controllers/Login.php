@@ -19,7 +19,7 @@ class Login extends Controller{
         }else {
             foreach($data['login'] as $row) :
                 $_SESSION['nama'] = $row['nama'];
-                    header("Location:".BASEURL."/Home/home.php");               
+                    header("Location:".BASEURL."/Home/index.php");               
             endforeach;    
         }
 
