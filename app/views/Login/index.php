@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $data['judul'];?></title>
-    
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
     tailwind.config = {
@@ -47,15 +53,6 @@
                 name="password"
                 placeholder="Masukkan Password" required/>
             </div>
-            <!-- Input dropdown -->
-            <!-- <select
-              class="p-2 rounded-xl shadow-md focus:outline-none focus:ring-4 focus: ring-teal-600 text-sm w-full"
-              id="loginType">
-              <option value="">Masuk Sebagai</option>
-              <option value="admin">Admin</option>
-              <option value="user">User</option>
-            </select> -->
-            <!-- End of input dropdown -->
             <button
               type="submit"
               class="form-control"

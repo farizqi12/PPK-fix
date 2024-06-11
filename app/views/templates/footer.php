@@ -1,14 +1,9 @@
-
-
-</div>
-</main>
-</div>
 <nav
       class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white rounded-t-lg">
       <!-- -------------------------------------- -->
       <div class="flex justify-around py-2">
         <a
-          href="home.html "
+          href="<?= BASEURL;?>/Home/home"
           class="text-green-400 flex flex-col items-center hover:text-green-400 active:bg-green-500 rounded-full active:p-1 active:text-white"
         >
           <svg
@@ -26,7 +21,7 @@
           <span class="text-xs">Home</span>
         </a>
         <a
-        href="riwayat_sampah.html"
+        href="<?= BASEURL;?>/Riwayat/index"
         class="flex flex-col items-center hover:text-green-400 active:bg-green-500 rounded-full active:p-1 active:text-white"
       >
         <svg
@@ -65,7 +60,7 @@
           <span class="text-xs">Laporkan</span>
         </a>
         <a
-          href="profil.html"
+          href="<?= BASEURL;?>Profil"
           class="flex flex-col items-center hover:text-green-400 active:bg-green-500 rounded-full active:p-1 active:text-white"
         >
           <svg

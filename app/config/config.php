@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL', 'http://localhost/disapu-app-web/public');
+define('BASEURL', 'http://localhost/disapu-app-web-fix/public/');
 
 
 //database
